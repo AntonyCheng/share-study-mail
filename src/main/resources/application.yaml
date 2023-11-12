@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: share-study-mail
+  #RabbitMQ Configuration
+  rabbitmq:
+    host: xxx.xxx.xxx.xxx
+    virtual-host: /
+    username: admin
+    password: admin123456
+    port: 25672
+    listener:
+      simple:
+        acknowledge-mode: manual
+  mail:
+    host: smtp.163.com
+    port: 25
+    username: xxx@163.com
+    password: xxx
+    from: xxx@163.com
